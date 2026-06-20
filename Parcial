@@ -1,0 +1,109 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mis Datos',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const DatosScreen(),
+    );
+  }
+}
+
+class DatosScreen extends StatefulWidget {
+  const DatosScreen({super.key});
+
+  @override
+  State<DatosScreen> createState() => _DatosScreenState();
+}
+
+class _DatosScreenState extends State<DatosScreen> {
+  final TextEditingController _nombreCtrl = TextEditingController();
+  final TextEditingController _edadCtrl   = TextEditingController();
+  final TextEditingController _correoCtrl = TextEditingController();
+
+  String _nombre = '';
+  String _edad   = '';
+  String _correo = '';
+  bool   _mostrar = false;
+
+  void _mostrarDatos() {
+    setState(() {
+      _nombre  = _nombreCtrl.text.trim();
+      _edad    = _edadCtrl.text.trim();
+      _correo  = _correoCtrl.text.trim();
+      _mostrar = true;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Formulario de Datos')),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // ── Campos de entrada ──────────────────────────
+            TextField(
+              controller: _nombreCtrl,
+              decoration: const InputDecoration(
+                labelText: 'Nombre',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _edadCtrl,
+              keyboardType: TextInputType.number,
+              decoration: const InputDecoration(
+                labelText: 'Edad',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _correoCtrl,
+              keyboardType: TextInputType.emailAddress,
+              decoration: const InputDecoration(
+                labelText: 'Correo electrónico',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 20),
+
+            // ── Botón ──────────────────────────────────────
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: _mostrarDatos,
+                child: const Text('Mostrar datos'),
+              ),
+            ),
+            const SizedBox(height: 24),
+
+            // ── Resultado ──────────────────────────────────
+            if (_mostrar) ...[
+              const Text(
+                'Tus datos:',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              Text('Nombre : $_nombre', style: const TextStyle(fontSize: 16)),
+              Text('Edad   : $_edad',   style: const TextStyle(fontSize: 16)),
+              Text('Correo : $_correo', style: const TextStyle(fontSize: 16)),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
