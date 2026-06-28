@@ -1,0 +1,15 @@
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.csproj.AssemblyReference.cache
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.AssemblyInfoInputs.cache
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.AssemblyInfo.cs
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.csproj.CoreCompileInputs.cache
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\bin\Debug\netstandard2.0\TodoApp.deps.json
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\bin\Debug\netstandard2.0\TodoApp.dll
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\bin\Debug\netstandard2.0\ref\TodoApp.dll
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\bin\Debug\netstandard2.0\TodoApp.pdb
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.dll
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\refint\TodoApp.dll
+C:\Users\jinni\source\repos\TodoApp\TodoApp\TodoApp\obj\Debug\netstandard2.0\TodoApp.pdb
